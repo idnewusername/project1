@@ -1,0 +1,42 @@
+<launch>
+
+<arg name="model" default="$(find second_robot)/world/dizzy.urdf.xacro"/>
+<arg name="rvizconfig" default="$(find urdf_tutorial)/rviz/urdf.rviz"/> 
+
+
+<include file="$(find second_robot)/launch/gazebo.launch">
+  <arg name="model" value="$(arg model)"/>
+</include>
+
+<!--<include file="$(find second_robot)/launch/teleop_management.launch">
+</include> -->
+
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/> 
+
+<rosparam command="load" 
+	  file="$(find second_robot)/control/joint_states.yaml" 
+	  ns="second_robot_joint_state_controller"/>
+
+<rosparam command="load"
+	  file="$(find second_robot)/control/diff_control1.yaml"
+	  ns="second_robot_diff_drive_controller"/>
+
+<rosparam command="load"
+	  file="$(find second_robot)/control/aux_tracks.yaml"
+	  ns="second_robot_position_controllers"/> 
+
+<!--<rosparam command="load"
+	  file="$(find second_robot)/control/aux_diff_control.yaml"
+	  ns="second_robot_aux_diff_drive_controller"/> -->
+
+<node name="second_robot_controlling" pkg="controller_manager" type="spawner" 
+      output="screen" 
+      args="second_robot_joint_state_controller
+            second_robot_diff_drive_controller
+	    second_robot_position_controllers"/> 
+
+
+<node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+  <param name="default_topic" value="/second_robot_diff_drive_controller/cmd_vel"/> 
+</node> 
+</launch>

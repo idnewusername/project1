@@ -1,0 +1,2 @@
+second_robot:second_robot_simple_control
+-DCATKIN_DEVEL_PREFIX=/home/aantonov/simple_robot/devel -DCMAKE_INSTALL_PREFIX=/home/aantonov/simple_robot/install -G Unix Makefiles

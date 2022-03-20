@@ -1,0 +1,158 @@
+<?xml version="1.0"?> 
+<robot name="ros_control" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- right track -->
+	<xacro:track_wheel name_link="right_track_wheel1" x="-0.225" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel3" x="-0.207" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel5" x="-0.189" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel7" x="-0.171" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel9" x="-0.153" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel11" x="-0.135" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel13" x="-0.117" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel15" x="-0.099" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel17" x="-0.081" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel19" x="-0.063" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel21" x="-0.045" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel23" x="-0.027" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel25" x="-0.009" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel27" x="0.009" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel29" x="0.027" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel31" x="0.045" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel33" x="0.063" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel35" x="0.081" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel37" x="0.099" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel39" x="0.117" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel41" x="0.135" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel43" x="0.153" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel45" x="0.171" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel47" x="0.189" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel49" x="0.207" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel51" x="0.225" y="${minus*(body_width/2 + wheel_width/2)}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel53" x="0.243" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0502" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel55" x="0.2598" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0436" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel57" x="0.2744" y="${minus*(body_width/2 + wheel_width/2)}" z="0.033" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel59" x="0.286" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0191" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel61" x="0.2939" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0029" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel63" x="0.2972" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0149" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel65" x="0.2963" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0329" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel67" x="0.2908" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0501" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel69" x="0.2813" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0656" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel71" x="0.26831" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0782" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel73" x="0.2522" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.087" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel75" x="0.2342" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.092" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel77" x="0.216" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel79" x="0.198" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel81" x="0.180" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel83" x="0.162" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel85" x="0.144" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel87" x="0.126" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel89" x="0.108" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel91" x="0.09" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel93" x="0.072" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel95" x="0.054" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel97" x="0.036" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel99" x="0.018" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel101" x="0" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel103" x="-0.018" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel105" x="-0.036" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel107" x="-0.054" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel109" x="-0.072" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel111" x="-0.09" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel113" x="-0.108" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel115" x="-0.126" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel117" x="-0.144" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel119" x="-0.162" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel121" x="-0.180" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel123" x="-0.198" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel125" x="-0.216" y="${minus*(body_width/2 + wheel_width/2)}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel129" x="-0.2516" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0474" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel131" x="-0.2675" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0388" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel133" x="-0.2807" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0265" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel135" x="-0.2904" y="${minus*(body_width/2 + wheel_width/2)}" z="0.0112" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel137" x="-0.296" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0059" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel139" x="-0.2972" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0239" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel141" x="-0.2942" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0417" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel143" x="-0.2865" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0582" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel145" x="-0.2752" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.0723" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel147" x="-0.2606" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.08315" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="right_track_wheel149" x="-0.2434" y="${minus*(body_width/2 + wheel_width/2)}" z="-0.09" roll="${PI/2}"/>
+
+
+
+	<!-- left track -->
+
+	<xacro:track_wheel name_link="left_track_wheel1" x="-0.225" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel3" x="-0.207" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel5" x="-0.189" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel7" x="-0.171" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel9" x="-0.153" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel11" x="-0.135" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel13" x="-0.117" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel15" x="-0.099" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel17" x="-0.081" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel19" x="-0.063" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel21" x="-0.045" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel23" x="-0.027" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel25" x="-0.009" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel27" x="0.009" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel29" x="0.027" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel31" x="0.045" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel33" x="0.063" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel35" x="0.081" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel37" x="0.099" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel39" x="0.117" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel41" x="0.135" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel43" x="0.153" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel45" x="0.171" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel47" x="0.189" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel49" x="0.207" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel51" x="0.225" y="${body_width/2 + wheel_width/2}" z="${(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel53" x="0.243" y="${body_width/2 + wheel_width/2}" z="0.0502" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel55" x="0.2598" y="${body_width/2 + wheel_width/2}" z="0.0436" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel57" x="0.2744" y="${body_width/2 + wheel_width/2}" z="0.033" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel59" x="0.286" y="${body_width/2 + wheel_width/2}" z="0.0191" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel61" x="0.2939" y="${body_width/2 + wheel_width/2}" z="0.0029" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel63" x="0.2972" y="${body_width/2 + wheel_width/2}" z="-0.0149" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel65" x="0.2963" y="${body_width/2 + wheel_width/2}" z="-0.0329" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel67" x="0.2908" y="${body_width/2 + wheel_width/2}" z="-0.0501" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel69" x="0.2813" y="${body_width/2 + wheel_width/2}" z="-0.0656" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel71" x="0.26831" y="${body_width/2 + wheel_width/2}" z="-0.0782" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel73" x="0.2522" y="${body_width/2 + wheel_width/2}" z="-0.087" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel75" x="0.2342" y="${body_width/2 + wheel_width/2}" z="-0.092" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel77" x="0.216" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel79" x="0.198" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel81" x="0.180" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel83" x="0.162" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel85" x="0.144" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel87" x="0.126" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel89" x="0.108" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel91" x="0.09" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel93" x="0.072" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel95" x="0.054" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel97" x="0.036" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel99" x="0.018" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel101" x="0" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel103" x="-0.018" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel105" x="-0.036" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel107" x="-0.054" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel109" x="-0.072" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel111" x="-0.09" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel113" x="-0.108" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel115" x="-0.126" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel117" x="-0.144" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel119" x="-0.162" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel121" x="-0.180" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel123" x="-0.198" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel125" x="-0.216" y="${body_width/2 + wheel_width/2}" z="${minus*(wheel_radius +track_wheel_radius)-0.02}" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel129" x="-0.2516" y="${body_width/2 + wheel_width/2}" z="0.0474" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel131" x="-0.2675" y="${body_width/2 + wheel_width/2}" z="0.0388" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel133" x="-0.2807" y="${body_width/2 + wheel_width/2}" z="0.0265" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel135" x="-0.2904" y="${body_width/2 + wheel_width/2}" z="0.0112" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel137" x="-0.296" y="${body_width/2 + wheel_width/2}" z="-0.0059" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel139" x="-0.2972" y="${body_width/2 + wheel_width/2}" z="-0.0239" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel141" x="-0.2942" y="${body_width/2 + wheel_width/2}" z="-0.0417" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel143" x="-0.2865" y="${body_width/2 + wheel_width/2}" z="-0.0582" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel145" x="-0.2752" y="${body_width/2 + wheel_width/2}" z="-0.0723" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel147" x="-0.2606" y="${body_width/2 + wheel_width/2}" z="-0.08315" roll="${PI/2}"/>
+	<xacro:track_wheel name_link="left_track_wheel149" x="-0.2434" y="${body_width/2 + wheel_width/2}" z="-0.09" roll="${PI/2}"/>
+</robot>

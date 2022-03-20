@@ -1,0 +1,8 @@
+prefix=/home/aantonov/simple_robot/install
+
+Name: second_robot
+Description: Description of second_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

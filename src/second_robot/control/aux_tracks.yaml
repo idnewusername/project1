@@ -1,0 +1,4 @@
+type: "position_controllers/JointGroupPositionController"
+joints: 
+  - right_wheel1_joint
+  - left_wheel1_joint

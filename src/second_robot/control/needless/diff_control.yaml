@@ -1,0 +1,26 @@
+type: "diff_drive_controller/DiffDriveController"
+publish_rate: 50
+
+left_wheel: [left_wheel2_joint, left_wheel4_joint, left_wheel3_joint, left_front_wheel_joint, left_back_wheel_joint]
+right_wheel: [right_wheel2_joint, right_wheel4_joint,  right_wheel3_joint, right_front_wheel_joint, right_back_wheel_joint]
+
+
+wheel_separation: 0.475
+
+pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+
+base_frame_id: base_link
+
+linear:
+  x:
+    has_velocity_limits    : true
+    max_velocity           : 1.67   # m/s
+    has_acceleration_limits: true
+    max_acceleration       : 3   # m/s^2
+angular:
+  z:
+    has_velocity_limits    : true
+    max_velocity           : 1.67   # rad/s
+    has_acceleration_limits: true
+    max_acceleration       : 3   # rad/s^2
